@@ -1,0 +1,3 @@
+from .customer_create_view import CustomerCreateView
+from .customer_detail_view import CustomerDetailView
+from .loan_offer_create_view import LoanOfferCreateView

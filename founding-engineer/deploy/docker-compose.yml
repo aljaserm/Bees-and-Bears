@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.backend
+    container_name: backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.frontend
+    container_name: frontend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - backend
+
+  database:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.database
+    container_name: database
+    volumes:
+      - db_data:/data
+    ports:
+      - "8080:8080"  # Optional, if using SQLite Web
+
+volumes:
+  db_data:

@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.so
+*.zip
+*.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.build/
+.env
+.venv
+ENV/
+env.bak/
+venv.bak/
+instance/
+.webassets-cache
+.scrapy
+
+# Database
+*.db
+*.sqlite3

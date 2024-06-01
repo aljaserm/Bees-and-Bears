@@ -1,0 +1,2 @@
+from .customer_serializer import CustomerSerializer
+from .loan_offer_serializer import LoanOfferSerializer
