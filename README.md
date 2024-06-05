@@ -1,5 +1,3 @@
-Here's the updated `README.md` with corrected hyperlinks and improved wording:
-
 # Bees-and-Bears Project
 
 This project consists of a backend and a frontend for a digital lending product. The backend is implemented using Django and provides an API for managing customers and loan offers. The frontend is built using React and Vite to interact with the backend API.
